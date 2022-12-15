@@ -1,0 +1,17 @@
+//User function Template for C++
+
+class Solution{
+    public:
+    
+    //You need to complete this function
+    double cToF(int C)
+    {  double F;
+        F=9/5.0;
+        
+        F*=(double)C;
+        
+        F+=32;
+        return F;
+        //Your code here
+    }
+};

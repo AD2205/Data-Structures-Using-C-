@@ -1,0 +1,12 @@
+class Solution{
+    public:
+       
+    long long factorial(int N) {
+    long long res=1;
+    for(int i=2;i<=N;i++)
+    res= res*i;
+    return res;
+    }
+    
+
+};

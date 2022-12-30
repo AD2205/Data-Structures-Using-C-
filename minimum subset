@@ -1,0 +1,23 @@
+
+
+class Solution{
+    public:
+    int minSubset(vector<int> &arr,int n){
+        long long sum=0;
+        sort(arr.begin(),arr.end());
+        for(int i=0;i<n;i++)
+        {
+            sum+=arr[i];
+        }
+        long long currsum=0;
+        int count=0;
+        for(int i=n-1;i>=0;i--)
+        {
+            currsum+=arr[i];
+            sum-=arr[i];
+            count++;
+            if(currsum>sum) return count;
+        }
+        return n;
+    }
+};
